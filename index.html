@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+    <title>Shuffle</title>
+</head>
+<body>
+    <div id="home">
+        <h1><img src="img/shuffle.png" alt="Shuffle"></h1>
+        <button class="lancer">Lancer</button>
+    </div>
+
+
+    <div id="game">
+        <p>De quel verbe en "ir" s’agit-il?</p>
+        <form>
+            <label for="answer" id="quiz"></label>
+            <br><br>
+            <input type="text" placeholder="Shuffle" id="answer">
+        </form><br>
+        <span id="un">Première lettre: <span class="indice"></span></span><br>
+        <span id="deux">Deuxième lettre: <span class="indice"></span></span><br>
+        <span id="trois">Troisième lettre: <span class="indice"></span></span><br>
+        <span id="quatre">Quatrième lettre: <span class="indice"></span></span><br>
+    </div>
+
+
+
+
+    <div id="win">
+        <h1>Bravo !</h1>
+        
+        <button class="jouer">Continuer</button>
+    </div>
+
+
+    <div id="lose">
+        <h1>Perdu !</h1>
+         
+        <button class="jouer">Recommencer</button>
+    </div>
+</body>
+</html>

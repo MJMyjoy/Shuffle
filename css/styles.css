@@ -1,0 +1,172 @@
+/* styles de base */
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+#lose, #win, #game, #home
+{
+    position: absolute;
+    top: 0;
+    height: 250px;
+    width: 100%;
+}
+
+#home
+{
+    background-color: mistyrose;
+}
+
+/* keyframes */
+@keyframes rouge
+{
+    75%
+    {
+        color: red;
+    }
+}
+@keyframes grand
+{
+    0%
+    {
+        transform: scale(0);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+
+@keyframes opaque
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+
+/* styles du jeu en cours*/
+#game
+{
+    display: none;
+}
+#game span
+{
+    font-size: 13px;
+}
+
+/* les animations */
+#game, #quiz, .indice
+{
+    animation: rouge 1s 55s infinite;
+}
+
+form
+{
+    animation: grand 1s both ease-in-out;
+}
+
+#un
+{
+    animation: opaque 1s 15s both ease-in-out;
+}
+#deux
+{
+    animation: opaque 1s 30s both ease-in-out;
+}
+#trois
+{
+    animation: opaque 1s 40s both ease-in-out;
+}
+#quatre
+{
+    animation: opaque 1s 50s both ease-in-out;
+}
+
+
+/* les lettres du shuffle */
+label
+{
+    font-size: 20px;
+}
+
+label, .indice
+{
+    text-transform: uppercase;
+    user-select: none;
+    font-family: "Poppins", sans-serif; 
+}
+
+
+/* le champs de la reponse */
+
+input
+{
+    text-align: center;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+
+input:focus {
+    border-color: rgba(0, 0, 0, .3);
+    outline: none;
+}
+
+
+
+
+/* pour bravo */
+#win
+{
+    background-color: antiquewhite;
+    transform: scale(0) skew(180deg);
+    transition: transform 1s ease-in-out;
+}
+
+/* pour perdu */
+#lose
+{
+    background-color: blanchedalmond;
+    display: none;
+}
+
+
+/* les boutons */
+
+.jouer, .lancer
+{
+    background-color: white;
+    color: rgba(0, 0, 0, .7);
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    font-size: italic;
+    transition: transform 0.2s ease-in-out;
+    outline: none;
+}
+.jouer:hover, .lancer:hover
+{
+    color: black;
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.26),
+				0 10px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+.jouer:active, .lancer:active
+{
+    transform: scale(1.2);
+}
