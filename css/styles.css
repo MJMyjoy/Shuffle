@@ -20,6 +20,11 @@ body
     background-color: mistyrose;
 }
 
+img
+{
+   max-width: 100%;
+}
+
 /* keyframes */
 @keyframes rouge
 {
